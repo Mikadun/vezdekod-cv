@@ -1,6 +1,7 @@
 # User-defined
 output/
 yolov*
+merged/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
