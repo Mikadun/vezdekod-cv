@@ -18,7 +18,7 @@ def merge_channels(input_dir: str, output_dir: str):
 
     # merge channels and save each image
     for i in tqdm(range(image_count)):
-        input_image_names = [f'{input_dir}/00{i+1:03d}_{ch}.jpg' for ch in 'bgr']
+        input_image_names = [f'{input_dir}/{i+1:05d}_{ch}.jpg' for ch in 'bgr']
         input_images = [cv2.imread(input_image_names[j], cv2.IMREAD_GRAYSCALE) for j in range(3)]
 
         output_image_name = f'{output_dir}/{i+1:05d}.jpg'
